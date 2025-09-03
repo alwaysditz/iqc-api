@@ -1,13 +1,15 @@
 {
   "name": "iqc-api",
   "version": "1.0.0",
-  "description": "API serverless untuk generate gambar iPhone-quoted style (node-canvas, tanpa Sharp).",
+  "description": "IQC API simple deploy on Vercel",
   "main": "api/iqc.js",
+  "scripts": {
+    "start": "node api/iqc.js"
+  },
   "dependencies": {
-    "canvas": "^2.11.2"
+    "express": "^4.18.2"
   },
   "engines": {
     "node": "22.x"
-  },
-  "license": "MIT"
+  }
 }
