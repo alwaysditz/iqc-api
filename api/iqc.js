@@ -1,4 +1,4 @@
-import { createCanvas } from "canvas";
+import { createCanvas, loadImage } from "@napi-rs/canvas";
 
 export default async function handler(req, res) {
   try {
@@ -111,4 +111,4 @@ export default async function handler(req, res) {
     console.error(err);
     res.status(500).json({ error: "Rendering failed", details: err.message });
   }
-                                                       }
+}
